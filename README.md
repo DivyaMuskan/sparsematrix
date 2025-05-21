@@ -26,3 +26,9 @@ double value = matrix.get(0, 0);  // Get element at row 0, col 0
 
 // Count non-zero elements
 size_t count = matrix.nonZeroCount();
+
+# Using MSVC
+cl /EHsc main.cpp
+
+# Or using MinGW
+g++ -o sparseMatrix main.cpp
